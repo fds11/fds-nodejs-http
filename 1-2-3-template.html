@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-  <title>Web Programming School - Node.js</title>
+  <title>FDS Node.js + HTTP</title>
 
   <link rel="stylesheet" href="css/reveal.css">
   <link rel="stylesheet" href="css/theme/blood.css">
@@ -30,12 +30,6 @@
         <h1>Template Language</h1>
       </section>
       <section>
-        <h2>Static Web Page</h2>
-        <p>누가 어떻게 요청하든 미리 저장되어 있던 HTML 파일을 그대로 응답</p>
-        <h2>Dynamic Web Page</h2>
-        <p>요청한 사람과 요청한 내용에 따라 <strong>각각 다른 내용으로 편집한 HTML을 응답</strong></p>
-      </section>
-      <section>
         <h1>웹 초창기 - CGI</h1>
         <pre><code data-trim>
 int main(void)
@@ -57,9 +51,6 @@ int main(void)
         </code></pre>
       </section>
       <section>
-        <img src="https://imgur.com/quqak5Kl.png" />
-      </section>
-      <section>
         <h1>Template Engine</h1>
         <ul>
           <li><strong>템플릿과 데이터를 결합</strong>해 문서를 생성하는 프로그램, 혹은 라이브러리</li>
@@ -71,9 +62,9 @@ int main(void)
         <p>Embedded JavaScript Template <a target="_blank" href="http://ejs.co">#</a></p>
         <ul>
           <li>Node.js 생태계에서 가장 많이 사용되는 템플릿 엔진</li>
-          <li>문법이 단순</li>
           <li>JavaScript 코드를 템플릿 안에서 그대로 쓸 수 있음</li>
-          <li><a target="_blank" href="https://marketplace.visualstudio.com/items?itemName=QassimFarid.ejs-language-support">.ejs VSCode Extension</a></li>
+          <li><a target="_blank" href="https://marketplace.visualstudio.com/items?itemName=DigitalBrainstem.javascript-ejs-support">EJS VSCode Extension</a></li>
+          <li><a target="_blank" href="http://blog.daum.net/_blog/BlogTypeView.do?blogid=0Mst5&articleno=7691304&categoryId=807820&regdt=20171113095204">EJS에서 Emmet 사용하기</a></li>
         </ul>
       </section>
       <section>
@@ -128,7 +119,7 @@ res.render('index.ejs', data)
         <p><a target="_blank" href="https://glitch.com/edit/#!/wpsn-ejs-example">Link</a></p>
       </section>
       <section>
-        <h1>Serving Static Files</h1>
+        <h1>파일을 그대로 제공하기</h1>
         <pre><code data-trim>
 // `public` 폴더에 있는 파일을 `/static` 경로 아래에서 제공
 app.use('/static', express.static('public'))
@@ -142,9 +133,6 @@ app.use('/static', express.static('public'))
       <section>
         <h1>EJS 실습</h1>
         <p><a target="_blank" href="https://glitch.com/edit/#!/wpsn-ejs-prac">Link</a></p>
-      </section>
-      <section data-background="https://media.giphy.com/media/xDpB3lRInUYla/giphy.gif">
-        <h1>수고하셨습니다</h1>
       </section>
     </div>
   </div>

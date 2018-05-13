@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-  <title>Web Programming School - Node.js</title>
+  <title>FDS Node.js + HTTP</title>
 
   <link rel="stylesheet" href="css/reveal.css">
   <link rel="stylesheet" href="css/theme/blood.css">
@@ -52,6 +52,7 @@
         <h1>토큰 사용의 장점</h1>
         <ul>
           <li>다양한 인증 수단(전화번호, 공인인증서, 생체정보 등)의 인증 결과를 <strong>토큰이라는 하나의 수단으로 통일</strong>할 수 있음</li>
+          <li>쿠키를 지원하지 않는 클라이언트에서도 편하게 사용할 수 있음</li>
           <li>쿠키를 사용하지 않음으로써 <strong>CORS 관련 문제를 회피</strong>할 수 있음</li>
         </ul>
       </section>
@@ -78,8 +79,8 @@
       <section>
         <h1>보안 상 주의사항</h1>
         <ul>
+          <li>(당연히) HTTPS를 사용해야 함</li>
           <li>토큰을 localStorage에 저장하게 되면 자바스크립트로 토큰을 탈취할 수 있게 되므로, <strong>웹사이트에 악성 스크립트를 삽입하는 공격(XSS)</strong>에 노출되지 않도록 신경써야 함</li>
-          <li>직접 DOM API를 사용하는 대신 EJS, React 같은 <strong>템플릿 언어를 사용하기만 해도 XSS에 대한 방어는 충분함</strong></li>
         </ul>
       </section>
       <section>
@@ -95,10 +96,6 @@
         <h1>JWT 실습</h1>
         <p><a target="_blank" href="https://glitch.com/edit/#!/wpsn-jwt-example">Link</a></p>
         <p><a target="_blank" href="https://my-glitch-app-pgrfniobrk.now.sh/">now App Link</a></p>
-      </section>
-      <section>
-        <h1>Next</h1>
-        <p><a href="2-2-4-fetch.html">Fetch API</a></p>
       </section>
       <section>
         <h1>참고 링크</h1>
